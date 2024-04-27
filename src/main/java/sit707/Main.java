@@ -37,7 +37,7 @@ public static void takeScreenshot(WebDriver driver, String screenshotName) {
         WebElement password = driver.findElement(By.id("firstname"));
         password.sendKeys("Ahsan");
 
-        WebElement lastname = driver.findElement(RelativeLocator.with(By.tagName("input")).below(By.id("firstname")));
+        WebElement lastname = driver.findElement(((Object) RelativeLocator.with(By.tagName("input"))).below(By.id("firstname")));
         lastname.sendKeys("lname");
 		
 		WebElement phoneNumber = driver.findElement(RelativeLocator.with(By.tagName("input")).below(By.id("lastname")));
